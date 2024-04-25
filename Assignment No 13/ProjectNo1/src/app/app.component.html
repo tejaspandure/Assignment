@@ -1,0 +1,87 @@
+<form class="example-form" action="" method="post" >
+  <img src="https://th.bing.com/th?id=OIP.puzai_D4808Fi7vlZTj3dQHaFh&w=289&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2" class="image">
+  <h1 class="Contact">Contact Our</h1>
+  
+  <h2 class="Customer">Customer Support Center</h2>
+
+  
+  <br>
+
+  <h4 class="contactinfo"> Contact Information</h4>
+  <h5 class="infocontact">Please fill out your information below</h5>
+  
+
+  <label><h3>Name*</h3></label>
+
+  <table class="" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <mat-hint>First Name</mat-hint>
+      <input matInput>
+    </mat-form-field></td>
+    <td><td> <mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <mat-hint>Last Name</mat-hint>
+      <input matInput>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+      <label><h3>Email*</h3></label>
+      <mat-form-field class="example-full-width">
+        <mat-label></mat-label>
+        <input type="email" matInput placeholder="Ex. pat@example.com">
+        <mat-hint> Email</mat-hint>
+        
+      </mat-form-field>
+
+    
+  </p>
+   
+  
+  <p>
+    <label><h3>Phone*</h3></label>
+    <mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <span matTextPrefix>+91 &nbsp;</span>
+      <input type="tel" matInput placeholder="555-555-1234">
+      <mat-hint>Enter valid phone number</mat-hint>
+    </mat-form-field>
+  </p>
+  
+  
+  
+  <p>
+  <label><h3>Address*</h3></label><mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <mat-hint>Enter your address</mat-hint>
+      <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+    </mat-form-field>
+    
+  </p>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <mat-hint>City</mat-hint>
+      <input matInput placeholder="Ex. San Francisco">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <mat-hint>State</mat-hint>
+      <input matInput placeholder="Ex. California">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      
+      <mat-hint>Postal Code</mat-hint>
+      <input matInput #postalCode maxlength="6">
+      <mat-hint align="end">{{postalCode.value.length}} / 6</mat-hint>
+    </mat-form-field></td>
+  </tr></table>
+  <p>
+    <button type="button" class="btn btn-primary">
+      Submit
+    </button>
+  </p>
+</form>
+
+
